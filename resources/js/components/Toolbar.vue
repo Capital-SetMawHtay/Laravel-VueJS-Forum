@@ -5,7 +5,8 @@
 
 <div class="hidden-sm-and-down">
 
-<v-btn flat>Forum</v-btn>
+<router-link to="/forum">
+<v-btn flat>Forum</v-btn></router-link>
 <v-btn flat>Ask Question</v-btn>
 <v-btn flat>Category</v-btn>
   <router-link to="/login">

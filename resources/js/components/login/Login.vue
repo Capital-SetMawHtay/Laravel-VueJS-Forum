@@ -28,7 +28,8 @@
       Login
     </v-btn>
 
-
+<router-link to="/signup">
+<v-btn flat>Signup</v-btn></router-link>
 
 
   </v-form>
@@ -48,9 +49,7 @@ data() {
 
 methods: {
   login(){
-      axios.post('/api/auth/login', this.form)
-      .then(response=>console.log(res.data))
-      .catch(error => console.log(error.response.data))
+     User.login(this.form)
   }
 }
 }
